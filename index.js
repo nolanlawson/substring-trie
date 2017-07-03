@@ -21,7 +21,7 @@ MiniTrie.prototype.search = function (str) {
   var len = str.length
   while (++i < len) {
     var char = str.charAt(i)
-    if (str.charAt(i) in dict) {
+    if (char in dict) {
       dict = dict[char]
     } else {
       break
