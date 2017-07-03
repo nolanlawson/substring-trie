@@ -1,0 +1,17 @@
+{
+  "name": "mini-trie",
+  "version": "1.0.0",
+  "description": "Minimalistic trie implementation for prefix searches",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha test.js"
+  },
+  "keywords": ["trie"],
+  "author": "Nolan Lawson <nolan@nolanlawson.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "standard": "^10.0.2"
+  }
+}
