@@ -1,5 +1,5 @@
 {
-  "name": "mini-trie",
+  "name": "substring-trie",
   "version": "1.0.0",
   "description": "Minimalistic trie implementation for prefix searches",
   "main": "index.js",

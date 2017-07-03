@@ -41,4 +41,11 @@ describe('main', function () {
     expect(trie.search('grapefruit')).to.equal('grapefruit')
     expect(trie.search('grapefruit and other fruit')).to.equal('grapefruit')
   })
+
+  it('test negative cases', function () {
+    var trie = new Trie(['banana', 'grape', 'grapefruit'])
+    expect(trie.search('apple')).to.equal(undefined)
+    expect(trie.search('grapple')).to.equal(undefined)
+    expect(trie.search('')).to.equal(undefined)
+  })
 })
