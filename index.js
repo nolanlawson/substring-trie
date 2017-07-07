@@ -1,6 +1,6 @@
 'use strict'
 
-var CODA_MARKER = '__$CODA$__'
+var CODA_MARKER = '$$' // marks the end of the string
 
 function MiniTrie (words) {
   this._dict = {}
