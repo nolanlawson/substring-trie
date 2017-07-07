@@ -1,12 +1,14 @@
 {
   "name": "substring-trie",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimalistic trie implementation for prefix searches",
   "main": "index.js",
   "scripts": {
     "test": "standard && mocha test.js"
   },
-  "keywords": ["trie"],
+  "keywords": [
+    "trie"
+  ],
   "author": "Nolan Lawson <nolan@nolanlawson.com>",
   "license": "Apache-2.0",
   "devDependencies": {
