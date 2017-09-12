@@ -3,7 +3,7 @@ substring-trie
 
 Minimalistic trie implementation for prefix searches. It finds the longest string from the dictionary that matches the beginning of the input string, or `undefined` if no matching string can be found.
 
-    npm install trie
+    npm install substring-trie
 
 ```js
 var Trie = require('substring-trie');
