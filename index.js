@@ -16,18 +16,23 @@ function MiniTrie (words) {
 }
 
 MiniTrie.prototype.search = function (str) {
-  var dict = this._dict
   var i = -1
   var len = str.length
+  var stack = [this._dict]
   while (++i < len) {
+    var dict = stack[i]
     var char = str.charAt(i)
     if (char in dict) {
-      dict = dict[char]
+      stack.push(dict[char])
     } else {
       break
     }
   }
-  return dict[CODA_MARKER] && str.substring(0, i)
+  while (stack.length) {
+    if (stack.pop()[CODA_MARKER]) {
+      return str.substring(0, stack.length)
+    }
+  }
 }
 
 module.exports = MiniTrie
