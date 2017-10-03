@@ -1,6 +1,6 @@
 {
   "name": "substring-trie",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Minimalistic trie implementation for prefix searches",
   "main": "index.js",
   "scripts": {
