@@ -70,4 +70,9 @@ describe('main', function () {
     expect(trie.search('grapefruities')).to.equal('grapefruities')
     expect(trie.search('grapefruitiessss')).to.equal('grapefruities')
   })
+
+  it('test issue #1', function () {
+    var trie = new Trie(['banana', 'grape', 'grape fruit', 'grape fruit sweet'])
+    expect(trie.search('grape fruit sour')).to.equal('grape fruit')
+  })
 })
